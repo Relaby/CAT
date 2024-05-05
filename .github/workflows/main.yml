@@ -1,0 +1,16 @@
+name: Run script daily
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at midnight every day
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run script
+      run: cat.py
