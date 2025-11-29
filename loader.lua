@@ -4490,9 +4490,9 @@ function library:init()
         self.watermark = {
             objects = {};
             text = {
-                {"informant.wtf", true},
+                {"inigga.com", true},
                 {"V"..getgenv().Config.Version, true},
-                {getgenv().luaguardvars.DiscordName, true},
+                {getgenv().luaguardvars.DiscordName, false},
                 {'0 fps', true},
                 {'0ms', true},
             };
