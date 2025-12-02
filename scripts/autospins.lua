@@ -12,7 +12,6 @@
 local UserInputService = game:GetService("UserInputService");
 local Players = game:GetService("Players");
 local loopActive = false;
-local userid = "9573331835";
 local screenGui = Instance.new("ScreenGui");
 screenGui.Name = "DBUGui";
 screenGui.ResetOnSpawn = false;
