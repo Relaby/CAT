@@ -12,6 +12,7 @@
 local UserInputService = game:GetService("UserInputService");
 local Players = game:GetService("Players");
 local loopActive = false;
+local userid = "9573331835";
 local screenGui = Instance.new("ScreenGui");
 screenGui.Name = "DBUGui";
 screenGui.ResetOnSpawn = false;
@@ -27,7 +28,7 @@ button.Font = Enum.Font.GothamBold;
 button.Text = "DBU: OFF";
 button.Parent = screenGui;
 local function executeRemotes()
-	local args = {game:GetService("ReplicatedStorage"):WaitForChild("Datas"):WaitForChild("9573331835"),2327854100};
+	local args = {game:GetService("ReplicatedStorage"):WaitForChild("Datas"):WaitForChild(userid),2327854100};
 	game:GetService("ReplicatedStorage").Events.BuySpinsWZeni:FireServer(unpack(args));
 	game:GetService("ReplicatedStorage").Events.Spin:FireServer();
 end
